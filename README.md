@@ -260,6 +260,7 @@ An interactive dashboard was developed to visualize insights and allow app succe
 googleplaystore/
 │
 ├── app.py
+├── requirements.txt
 ├── README.md
 │
 ├── dataset/
