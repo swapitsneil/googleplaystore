@@ -1,30 +1,34 @@
-# 📱 Google Play Store Data Analysis Project
+# 📱 Google Play Store Analytics & App Success Prediction
 
-## 📌 Project Overview
+## 🚀 Project Overview
 
-This project performs an in-depth **Exploratory Data Analysis (EDA)**, **Descriptive Statistics**, and **Inferential Statistics** on the Google Play Store dataset to uncover insights about app performance, ratings, installs, categories, pricing, reviews, and user sentiment.
+This project analyzes Google Play Store applications using Data Cleaning, Exploratory Data Analysis (EDA), Inferential Statistics, Feature Engineering, Machine Learning, and an Interactive Streamlit Dashboard.
 
-The objective is to transform raw app-store data into meaningful business insights and build a strong foundation for future Machine Learning models that can predict app success, ratings, installs, and user engagement.
-
----
-
-## 🎯 Project Goals
-
-- Understand the structure and quality of Google Play Store data
-- Perform extensive data cleaning and preprocessing
-- Analyse app ratings, installs, reviews, pricing, and categories
-- Generate business insights using visualisations
-- Apply statistical techniques to validate assumptions
-- Prepare the dataset for future Machine Learning applications
+The objective is to identify the factors that contribute to app success and build a predictive model that estimates an application's success category based on characteristics such as category, pricing strategy, content rating, and app size.
 
 ---
 
-## 📂 Dataset Information
+## 🎯 Business Problem
 
-This project uses two datasets:
+Developers often struggle to determine whether an app idea is likely to succeed before launch.
+
+This project aims to answer:
+
+- Which categories perform best?
+- Do free apps outperform paid apps?
+- How do ratings and reviews impact installs?
+- Which factors influence app success?
+- Can we predict app success before launch?
+
+---
+
+## 📂 Dataset
+
+The project uses two datasets:
 
 ### 1. Google Play Store Apps Dataset
-Contains information about:
+
+Contains:
 
 - App Name
 - Category
@@ -32,13 +36,15 @@ Contains information about:
 - Reviews
 - Size
 - Installs
-- Type (Free/Paid)
+- Type
 - Price
 - Content Rating
 - Genres
-- Last Updated
+- Android Version
+- Current Version
 
 ### 2. Google Play Store User Reviews Dataset
+
 Contains:
 
 - User Reviews
@@ -48,208 +54,258 @@ Contains:
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
+
+### Languages & Libraries
 
 - Python
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
+- Scikit-Learn
 - SciPy
+- Joblib
+
+### Dashboard
+
+- Streamlit
+
+### Development Environment
+
 - Jupyter Notebook
+- VS Code
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
+# 📊 Exploratory Data Analysis
 
-The notebook includes extensive EDA covering:
+The project includes:
 
 ### Data Understanding
-- Dataset shape
-- Data types
-- Missing value analysis
-- Duplicate record analysis
+
+- Dataset Shape
+- Data Types
+- Missing Values
+- Duplicate Analysis
 
 ### Data Cleaning
-- Handling missing values
-- Removing duplicates
-- Data type conversions
-- Cleaning installs and price columns
-- Standardising categorical variables
+
+- Missing Value Treatment
+- Duplicate Removal
+- Data Type Conversion
+- Install Count Cleaning
+- Price Cleaning
+- Feature Standardization
 
 ### Univariate Analysis
-- Rating distribution
-- Install distribution
-- Price distribution
-- Category frequency analysis
+
+- Rating Distribution
+- Reviews Distribution
+- Installs Distribution
+- Price Distribution
+- Category Distribution
 
 ### Bivariate Analysis
+
 - Reviews vs Installs
 - Rating vs Reviews
-- Category vs Rating
 - Free vs Paid Apps
+- Category vs Ratings
 
 ### Multivariate Analysis
-- Correlation analysis
-- Category-based performance analysis
-- Sentiment impact analysis
+
+- Correlation Analysis
+- Sentiment Analysis
+- Category Performance Analysis
 
 ---
 
-## 📈 Statistical Analysis
+# 📈 Statistical Analysis
 
-### Descriptive Statistics
+## Descriptive Statistics
 
-The project calculates:
+Calculated:
 
 - Mean
 - Median
-- Mode
 - Standard Deviation
 - Variance
+- Skewness
+- Kurtosis
 - Quartiles
-- Distribution Analysis
 
-### Correlation Analysis
+## Inferential Statistics
 
-Relationship analysis between:
+### Independent T-Test
 
-- Ratings
-- Reviews
-- Installs
-- Sentiment Scores
-- App Pricing
+**Objective:**
 
-### Inferential Statistics
+Compare ratings of Free vs Paid Apps
 
-#### Hypothesis Testing
+### ANOVA
 
-**Free vs Paid App Ratings**
+**Objective:**
 
-- Null Hypothesis (H₀):
-  Mean ratings of Free and Paid apps are equal
-
-- Alternative Hypothesis (H₁):
-  Mean ratings of Free and Paid apps are different
-
-#### ANOVA Test
-
-**Ratings Across Categories**
-
-Used to determine whether app categories have significantly different rating distributions.
+Determine whether ratings differ significantly across app categories.
 
 ---
 
-## 📊 Key Visualizations
+# 🤖 Machine Learning
 
-The notebook includes visualisations such as:
+## Problem Statement
 
-- Rating Distribution
-- Category Distribution
-- Correlation Heatmap
-- Free vs Paid Rating Boxplot
-- Reviews vs Installs Scatterplot
-- Sentiment vs Rating Analysis
-- Category-wise Rating Distribution
-- Top Categories by Installs
-- Top Categories by Ratings
+Predict App Success Category using app characteristics.
+
+### Target Variable
+
+Success Category:
+
+- Low
+- Medium
+- High
+
+### Features Used
+
+- Category
+- Type
+- Content Rating
+- Price
+- Size
+
+### Models Implemented
+
+- Logistic Regression
+- Random Forest Classifier
+
+### Evaluation Metrics
+
+- Accuracy Score
+- Precision
+- Recall
+- F1 Score
+- Feature Importance
 
 ---
 
-## 🔍 Major Insights
+# 📊 Key Insights
 
-Some insights extracted from the analysis include:
+### Ratings
 
-- Certain categories dominate total installs.
-- App ratings vary significantly across categories.
-- Reviews and installs show a strong positive relationship.
-- Free and paid apps exhibit different rating behaviours.
-- User sentiment can influence overall app ratings.
-- Category selection plays an important role in app performance.
+- Most applications are highly rated.
+- Low-rated applications are relatively rare.
+
+### Reviews
+
+- User engagement is concentrated among a small number of apps.
+- Review counts are heavily right-skewed.
+
+### Installs
+
+- Install counts follow a winner-takes-most pattern.
+- A few applications dominate the platform.
+
+### Pricing
+
+- Most applications are free.
+- Paid apps represent a small portion of the marketplace.
+
+### Statistical Findings
+
+- Free and Paid apps have significantly different rating distributions.
+- Ratings vary significantly across app categories.
 
 ---
 
-## 📁 Project Structure
+# 🖥️ Streamlit Dashboard
+
+An interactive dashboard was developed to visualize insights and allow app success prediction.
+
+### Features
+
+- Dataset Overview
+- KPI Metrics
+- EDA Dashboard
+- Interactive Success Predictor
+
+---
+
+# 📸 Dashboard Screenshots
+
+## Dashboard Overview
+
+![Dashboard](screenshots/sc1.png)
+
+## Dataset Preview
+
+![Dataset](screenshots/sc2.png)
+
+## EDA Dashboard
+
+![EDA](screenshots/sc3.png)
+
+## Success Predictor
+
+![Prediction](screenshots/sc4.png)
+
+## Additional Dashboard View
+
+![Dashboard](screenshots/sc5.png)
+
+---
+
+# 📁 Project Structure
 
 ```text
-Google-Play-Store-EDA/
+googleplaystore/
 │
-├── googleplayeda.ipynb
-├── googleplaystore.csv
-├── googleplaystore_user_reviews.csv
+├── app.py
 ├── README.md
 │
-└── future_ml_models/
+├── dataset/
+│   ├── googleplaystore.csv
+│   └── googleplaystore_user_reviews.csv
+│
+├── cleaned dataset/
+│   └── googleplaycleaneddf.xlsx
+    └── googleplaystore_cleaned.csv
+│
+├── ML Models/
+│   ├── LogisticRegression.ipynb
+│   └── LinearRegression.ipynb
+│
+├── screenshots/
+│   ├── sc1.png
+│   ├── sc2.png
+│   ├── sc3.png
+│   ├── sc4.png
+│   └── sc5.png
+│
+└── googleplayeda.ipynb
 ```
 
 ---
 
-## 🚀 Future Work
+# 💼 Business Applications
 
-This project is intentionally designed as the first phase of a larger analytics pipeline.
-
-### Upcoming Machine Learning Tasks
-
-#### Regression Models
-
-Predict:
-
-- App Rating
-- Number of Installs
-- User Engagement Metrics
-
-Potential algorithms:
-
-- Linear Regression
-- Random Forest Regressor
-- XGBoost Regressor
-
-#### Classification Models
-
-Predict:
-
-- High Performing Apps
-- Successful vs Unsuccessful Apps
-- Sentiment Categories
-
-Potential algorithms:
-
-- Logistic Regression
-- Random Forest
-- XGBoost
-- LightGBM
-
-#### Advanced Analytics
-
-- Feature Engineering
-- Feature Selection
-- Model Explainability (SHAP)
-- Hyperparameter Tuning
-- Cross Validation
-
----
-
-## 💡 Business Applications
-
-This analysis can help:
+This project can help:
 
 - App Developers
 - Product Managers
 - Marketing Teams
 - Data Analysts
 
-to understand:
+understand:
 
-- What drives app success
-- Which categories perform best
-- User sentiment patterns
-- Factors affecting ratings and installs
+- Factors driving app success
+- High-performing categories
+- User engagement patterns
+- Impact of pricing strategy
+- App launch planning
 
 ---
 
-## 📚 Learning Outcomes
-
-Through this project, I practised:
+# 📚 Skills Demonstrated
 
 - Data Cleaning
 - Data Wrangling
@@ -258,16 +314,19 @@ Through this project, I practised:
 - Inferential Statistics
 - Hypothesis Testing
 - ANOVA
-- Data Visualisation
+- Feature Engineering
+- Machine Learning
+- Streamlit Development
+- Data Visualization
 - Business Insight Generation
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Swap Nicolson**
 
-Aspiring Data Analyst focused on:
+Aspiring Data Analyst passionate about:
 
 - Data Analytics
 - Statistics
@@ -275,6 +334,7 @@ Aspiring Data Analyst focused on:
 - Business Intelligence
 - Power BI
 - Python
+- SQL
 
 ---
 
