@@ -220,8 +220,9 @@ Success Category:
 # 🖥️ Streamlit Dashboard
 
 An interactive dashboard was developed to visualize insights and allow app success prediction.
+---
 link - https://knihrsafpfuwk3g9au8q5e.streamlit.app/
-
+---
 ### Features
 
 - Dataset Overview
