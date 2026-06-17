@@ -327,7 +327,7 @@ understand:
 
 # 👨‍💻 Author
 
-**Swap Nicolson**
+**Swapnil Nicolson Dadel**
 
 Aspiring Data Analyst passionate about:
 
@@ -338,6 +338,7 @@ Aspiring Data Analyst passionate about:
 - Power BI
 - Python
 - SQL
+- GenAI
 
 ---
 
