@@ -285,6 +285,9 @@ googleplaystore/
 ├── requirements.txt
 ├── README.md
 │
+├── SQL/
+│   └── eda.sql
+│
 ├── dataset/
 │   ├── googleplaystore.csv
 │   └── googleplaystore_user_reviews.csv
