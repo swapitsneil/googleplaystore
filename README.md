@@ -351,28 +351,35 @@ This project can help:
 
 understand:
 
-- Factors driving app success
+- Factors driving application success
 - High-performing categories
 - User engagement patterns
-- Impact of pricing strategy
+- Pricing strategy effectiveness
+- Market opportunities
 - App launch planning
 
 ---
 
 # 📚 Skills Demonstrated
 
-- Data Cleaning
-- Data Wrangling
-- Exploratory Data Analysis
+- SQL Analytics
+- Data Cleaning & Wrangling
+- Exploratory Data Analysis (EDA)
+- Data Visualization
 - Descriptive Statistics
 - Inferential Statistics
 - Hypothesis Testing
+- T-Test
 - ANOVA
+- Correlation Analysis
 - Feature Engineering
 - Machine Learning
+- Logistic Regression
+- Linear Regression
+- Model Evaluation
+- Power BI Dashboard Development
 - Streamlit Development
-- Data Visualization
-- Business Insight Generation
+- Business Insights & Data Storytelling
 
 ---
 
