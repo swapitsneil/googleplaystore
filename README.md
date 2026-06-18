@@ -8,6 +8,16 @@ The objective is to identify the factors that contribute to app success and buil
 
 ---
 
+## Executive Summary
+
+- Analyzed 10,841 apps and 64,295 reviews
+- Built 15+ SQL analytical queries
+- Identified Game category as largest market segment
+- Found free apps significantly outperform paid apps
+- Developed ML model and Streamlit dashboard for app success prediction
+
+---
+
 ## 🎯 Business Problem
 
 Developers often struggle to determine whether an app idea is likely to succeed before launch.
