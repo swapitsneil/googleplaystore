@@ -297,6 +297,11 @@ googleplaystore/
 │
 ├── SQL/
 │   └── eda.sql
+│ 
+├── PowerBI/
+|   ├── GooglePlayStore_Analytics.pbix
+|   ├── pb1.png
+│   └── pb2.png
 │
 ├── dataset/
 │   ├── googleplaystore.csv
@@ -311,6 +316,7 @@ googleplaystore/
 │   └── LinearRegression.ipynb
 │
 ├── screenshots/
+|   ├── googleplayimage.png
 │   ├── sc1.png
 │   ├── sc2.png
 │   ├── sc3.png
