@@ -284,6 +284,12 @@ link - https://knihrsafpfuwk3g9au8q5e.streamlit.app/
 
 ![Dashboard](screenshots/sc5.png)
 
+## PowerBI Dashboard
+
+![Dashboard](PowerBI/pb1.png)
+
+![Dashboard](PowerBI/pb2.png)
+
 ---
 
 # 📁 Project Structure
