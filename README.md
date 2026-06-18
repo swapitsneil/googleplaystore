@@ -251,6 +251,16 @@ A complete MySQL analytics workflow was implemented before Python analysis.
 
 ---
 
+## Strategic Recommendations
+
+* Prioritize Game, Communication, and Social categories for maximum market reach.
+* Adopt a freemium pricing model, as free apps dominate both app count and installs.
+* Maintain regular updates to improve discoverability and user retention.
+* Optimize application size to improve accessibility across devices.
+* Monitor ratings and review sentiment continuously to identify user experience issues early.
+
+---
+
 # 🖥️ Streamlit Dashboard
 
 An interactive dashboard was developed to visualize insights and allow app success prediction.
