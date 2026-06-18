@@ -226,30 +226,14 @@ A complete MySQL analytics workflow was implemented before Python analysis.
 
 # 📊 Key Insights
 
-### Ratings
-
-- Most applications are highly rated.
-- Low-rated applications are relatively rare.
-
-### Reviews
-
-- User engagement is concentrated among a small number of apps.
-- Review counts are heavily right-skewed.
-
-### Installs
-
-- Install counts follow a winner-takes-most pattern.
-- A few applications dominate the platform.
-
-### Pricing
-
-- Most applications are free.
-- Paid apps represent a small portion of the marketplace.
-
-### Statistical Findings
-
-- Free and Paid apps have significantly different rating distributions.
-- Ratings vary significantly across app categories.
+* GAME category generated over **13.4 Billion installs**, making it the largest category on the platform.
+* Free apps significantly outperformed paid apps in both installs and user engagement.
+* Education achieved the highest average rating (4.31), indicating strong user satisfaction.
+* Apps rated **Everyone** dominated the marketplace by total app count.
+* Categories such as Video Players, Social, Photography, and Entertainment performed above platform averages.
+* Positive review sentiment was observed across most major categories.
+* The majority of applications were updated during 2018, highlighting rapid ecosystem growth.
+* User engagement follows a winner-takes-most pattern where a small number of apps capture most installs and reviews.
 
 ---
 
