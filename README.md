@@ -64,11 +64,12 @@ Contains:
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
 ### Languages & Libraries
 
 - Python
+- SQL (MySQL)
 - Pandas
 - NumPy
 - Matplotlib
@@ -77,14 +78,17 @@ Contains:
 - SciPy
 - Joblib
 
-### Dashboard
+### Business Intelligence & Dashboarding
 
+- Power BI
 - Streamlit
 
 ### Development Environment
 
 - Jupyter Notebook
 - VS Code
+- Git
+- GitHub
 
 ---
 
@@ -186,7 +190,7 @@ Success Category:
 ### Models Implemented
 
 - Logistic Regression
-- Random Forest Classifier
+- Linear Regression
 
 ### Evaluation Metrics
 
