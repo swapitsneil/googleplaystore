@@ -8,7 +8,7 @@ The objective is to identify the factors that contribute to app success and buil
 
 ---
 
-## Executive Summary
+## 📊 Executive Summary
 
 - Analyzed 10,841 apps and 64,295 reviews
 - Built 15+ SQL analytical queries
