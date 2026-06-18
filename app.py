@@ -66,8 +66,8 @@ page = st.sidebar.selectbox("Select Page", ["Overview", "Dataset", "EDA Dashboar
 
 # OVERVIEW
 
-
 if page == "Overview":
+    st.image("screenshots/googleplayimage.png", width=500)
     st.title("📱 Google Play Store Analytics Dashboard")
 
     col1, col2, col3, col4 = st.columns(4)
@@ -77,15 +77,57 @@ if page == "Overview":
     col4.metric("Average Price", f"${round(df['Price'].mean(), 2)}")
 
     st.divider()
-    st.subheader("Project Overview")
+
+    st.subheader("📌 Executive Summary")
+
     st.write("""
-    This project analyzes Google Play Store applications using:
-    
-    - Data Cleaning
-    - Exploratory Data Analysis
-    - Descriptive & Inferential Statistics
-    - Machine Learning (Logistic Regression & Linear Regression)
-    - Streamlit Deployment
+    This project analyzes over 8,000 Google Play Store applications to identify the factors influencing app performance, user engagement, ratings, and installs.
+
+    The analysis combines data cleaning, exploratory data analysis, statistical testing, machine learning, and interactive dashboards to uncover actionable business insights for developers and product teams.
+    """)
+
+    st.subheader("📈 Key Findings")
+
+    st.markdown("""
+    - Communication apps achieved the highest average installs (**43.1M installs**).
+    - Social apps recorded over **27M average installs**, indicating strong user demand.
+    - Reviews and installs showed a strong positive correlation (**r = 0.62**).
+    - Paid apps achieved a higher average rating (**4.26**) than free apps (**4.17**).
+    - Ratings differed significantly across categories (**ANOVA p-value < 0.05**).
+    - More than **75% of applications were free**, highlighting the dominance of freemium business models.
+    """)
+
+    st.subheader("💼 Business Insights & Recommendations")
+
+    st.markdown("""
+    ##### 1. Focus on High-Growth Categories
+
+    - **Evidence:** Communication apps averaged **43.1M installs**, while Social apps averaged **27.0M installs**.
+    - **Recommendation:** Developers seeking large-scale user acquisition should prioritize categories with broad daily usage and strong network effects.
+
+
+    ##### 2. Leverage User Engagement
+
+    - **Evidence:** Reviews and installs exhibited a strong positive correlation (**r = 0.62**).
+    - **Recommendation:** Encouraging reviews and ratings can improve visibility, credibility, and long-term app growth.
+
+
+    ##### 3. Benchmark Within Categories
+
+    - **Evidence:** ANOVA testing produced a statistically significant result (**p-value = 2.20e-30**), indicating that ratings vary across categories.
+    - **Recommendation:** Compare performance against category-specific competitors rather than overall Play Store averages.
+
+
+    ##### 4. Consider Freemium Monetization
+
+    - **Evidence:** More than **75% of applications were free**, and the median app price was **$0**.
+    - **Recommendation:** Ad-supported, subscription-based, or freemium models may be more effective for maximizing adoption.
+
+
+    ##### 5. Evaluate Pricing Strategy Carefully
+
+    - **Evidence:** Paid applications achieved an average rating of **4.26**, compared to **4.17** for free apps.
+    - **Recommendation:** Premium pricing may be suitable for niche products that can clearly demonstrate value to users.
     """)
 
 # Dataset
@@ -99,31 +141,67 @@ elif page == "Dataset":
 
 # EDA dashboard
 
-
 elif page == "EDA Dashboard":
+
     st.title("📊 EDA Dashboard")
 
     col1, col2 = st.columns(2)
 
+    # Chart 1
     with col1:
         st.subheader("Top Categories by Installs")
+
         installs_by_category = (
             df.groupby("Category")["Installs"]
             .mean()
             .sort_values(ascending=False)
             .head(10)
         )
+
         st.bar_chart(installs_by_category)
 
+    # Chart 2
     with col2:
         st.subheader("Top Categories by Rating")
+
         rating_by_category = (
             df.groupby("Category")["Rating"]
             .mean()
             .sort_values(ascending=False)
             .head(10)
         )
+
         st.bar_chart(rating_by_category)
+
+    st.divider()
+
+    col3, col4 = st.columns(2)
+
+    # Chart 3
+    with col3:
+        st.subheader("Free vs Paid Apps")
+
+        type_counts = (
+            df["Type"]
+            .value_counts()
+        )
+
+        st.bar_chart(type_counts)
+
+    # Chart 4
+    with col4:
+        st.subheader("Content Rating Distribution")
+
+        content_counts = (
+            df["Content Rating"]
+            .value_counts()
+        )
+
+        st.bar_chart(content_counts)
+
+
+    st.image("PowerBI/pb1.png", caption="PowerBI Dashboard 1")  
+    st.image("PowerBI/pb2.png", caption="PowerBI Dashboard 2")   
 
 
 # Success Prediction (Logistic Regression)
