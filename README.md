@@ -188,6 +188,42 @@ Success Category:
 
 ---
 
+# 🗄️ SQL Analytics
+
+A complete MySQL analytics workflow was implemented before Python analysis.
+
+### Data Cleaning
+
+* Imported 10,841 app records and 64,295 review records using `LOAD DATA LOCAL INFILE`
+* Removed corrupted records
+* Handled duplicate apps using `ROW_NUMBER()`
+* Cleaned Installs, Price, and Size columns
+* Created an analytics-ready table (`googleplaystore_clean`)
+
+### Advanced SQL Concepts Demonstrated
+
+* Common Table Expressions (CTEs)
+* Multiple CTEs
+* Window Functions (`ROW_NUMBER`, `DENSE_RANK`)
+* Date Functions (`STR_TO_DATE`, `YEAR`)
+* Joins
+* Conditional Aggregation
+* Query Optimization
+* Sentiment Analysis
+
+### Business Analysis Performed
+
+* Top Categories by Installs
+* Free vs Paid App Analysis
+* Content Rating Analysis
+* Category Performance Analysis
+* Sentiment Analysis by Category
+* Top Apps Within Each Category
+* App Update Trends
+
+
+---
+
 # 📊 Key Insights
 
 ### Ratings
