@@ -288,6 +288,8 @@ link - https://knihrsafpfuwk3g9au8q5e.streamlit.app/
 
 ![Dashboard](PowerBI/pb1.png)
 
+## Dashboard with Executive Summary & Business Recommendations
+
 ![Dashboard](PowerBI/pb2.png)
 
 ---
